@@ -1,0 +1,58 @@
+﻿
+@model WebApplication2.Models.Forma
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ispis</title>
+    <style>
+        body{
+            background-image:url("/Slike/slika1.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        table{
+            background-color:red;
+            border:2px solid silver;
+            margin:auto;
+            width:800px;
+            height:350px;
+            font-size:3rem;
+            text-align:center;
+            color:floralwhite;
+        }
+        th{
+            text-align:center;
+        }
+        h1{
+            text-align:center;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guitar opinions</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.Email</td>
+            <td>@Model.Message</td>
+        </tr>
+    </table>
+    <div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+            <div id="footer">
+                <p>Copyright</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
